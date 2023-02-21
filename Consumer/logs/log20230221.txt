@@ -1,0 +1,14 @@
+2023-02-21 22:53:50.655 +01:00 [INF] Now listening on: http://localhost:5172
+2023-02-21 22:53:50.675 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 22:53:50.675 +01:00 [INF] Hosting environment: Development
+2023-02-21 22:53:50.675 +01:00 [INF] Content root path: /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer
+2023-02-21 22:53:55.971 +01:00 [INF] Application is shutting down...
+2023-02-21 22:54:06.799 +01:00 [INF] Now listening on: http://localhost:5172
+2023-02-21 22:54:06.820 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-21 22:54:06.821 +01:00 [INF] Hosting environment: Development
+2023-02-21 22:54:06.821 +01:00 [INF] Content root path: /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer
+2023-02-21 22:54:24.546 +01:00 [ERR] No handler registered for message type UserCreated
+2023-02-21 22:54:54.538 +01:00 [ERR] No handler registered for message type UserCreated
+2023-02-21 22:55:21.660 +01:00 [ERR] No handler registered for message type UserCreated
+2023-02-21 22:55:24.540 +01:00 [ERR] No handler registered for message type UserCreated
+2023-02-21 22:55:46.535 +01:00 [INF] Application is shutting down...
