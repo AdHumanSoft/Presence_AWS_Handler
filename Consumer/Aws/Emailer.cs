@@ -1,12 +1,10 @@
-using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 using Amazon.SimpleEmail;
 using Amazon.SimpleEmail.Model;
 
-namespace Consumer.Utils;
+namespace Consumer.Aws;
 
 
 
@@ -23,6 +21,15 @@ public struct UserCreatedEmailOptions
     public string Password { get; set; }
 }
 
+
+public struct QrReadEmailOptions{
+
+    [JsonPropertyName("NAME")]
+    public string Name { get; set; }
+    [JsonPropertyName("DATE")]
+    public string Date { get; set; }
+
+}
 
 public struct CreateTemplateRequestBody {
     
@@ -66,9 +73,24 @@ public class Emailer
 
         var result = await _sesClient.SendTemplatedEmailAsync(request);
 
-        Console.WriteLine("MessageId: {0}", result.MessageId);
 
 
+    }
+
+    public async Task SendQrReadEmailAsync(
+        string identity,
+        string to
+        ,QrReadEmailOptions options)
+    {
+        var request = new Amazon.SimpleEmail.Model.SendTemplatedEmailRequest();
+        request.Source = identity;
+        request.Destination = new Destination
+        {
+            ToAddresses = new List<string>(){to}
+        };
+        request.Template = "QrRead";
+        request.TemplateData = JsonSerializer.Serialize(options);
+        var result = await _sesClient.SendTemplatedEmailAsync(request);
     }
 
 
@@ -81,7 +103,6 @@ public class Emailer
 
         var result = await _sesClient.VerifyEmailIdentityAsync(request);
 
-        Console.WriteLine("Identity added: {0}", result.HttpStatusCode);
     }
     public async Task CreateTemplateAsync(
         CreateTemplateRequestBody request
@@ -98,7 +119,6 @@ public class Emailer
 
         var result = await _sesClient.CreateTemplateAsync(_request);
 
-        Console.WriteLine("Template created: {0}", result.HttpStatusCode);
     }
 
 
@@ -117,6 +137,5 @@ public class Emailer
 
         var result = await _sesClient.UpdateTemplateAsync(_request);
 
-        Console.WriteLine("Template updated: {0}", result.HttpStatusCode);
     }
 }

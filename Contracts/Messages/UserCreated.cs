@@ -12,6 +12,9 @@ public class UserCreated : IMessage
     [JsonPropertyName("userId")]
     public string UserId { get; init; } = string.Empty;
 
+    [JsonPropertyName("firstName")]
+    public string FirstName { get; init; } = string.Empty;
+
     [JsonPropertyName("email")]
     public string Email { get; init; } = string.Empty;
 

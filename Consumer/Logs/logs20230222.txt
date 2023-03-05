@@ -1,0 +1,814 @@
+2023-02-22 00:43:08.246 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:43:08.941 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:43:38.465 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:43:38.944 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:44:08.360 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:44:09.376 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:45:52.168 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:45:52.685 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:46:22.230 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:46:22.767 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:46:52.215 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 00:46:52.717 +01:00 [ERR] Error processing message {
+"userId":"aa",
+"email":"bb@gg.com",
+"password":"aasda"
+}
+Amazon.SimpleEmail.Model.MessageRejectedException: Email address is not verified. The following identities failed the check in region EU-WEST-2: bb@gg.com
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Consumer.Aws.Emailer.SendUserCreatedEmailAsync(UserCreatedEmailOptions options) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/Emailer.cs:line 65
+   at Consumer.Handlers.UserCreatedHandler.HandleAsync(IMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Handlers/UserCreatedHandler.cs:line 29
+   at Consumer.Aws.MessageDispatcher.DispatchAsync[TMessage](TMessage message) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/MessageDispatcher.cs:line 60
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 68
+2023-02-22 04:22:07.393 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:22:37.495 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:23:07.498 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:23:37.795 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:24:07.835 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:24:37.907 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:25:08.048 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:25:38.168 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:26:08.213 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:26:38.327 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:27:08.445 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:27:38.579 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:28:08.773 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:28:38.895 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:29:08.966 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:29:39.150 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:30:09.266 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:30:39.334 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:31:09.506 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:31:36.627 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:31:39.571 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:32:06.746 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:32:09.649 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:32:36.901 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:32:39.785 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:33:07.674 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:33:09.911 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:33:37.683 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:33:39.940 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:34:07.726 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:34:10.205 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:34:37.882 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:34:40.219 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:35:07.954 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:35:10.347 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:35:38.224 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:35:40.683 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:36:08.490 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:36:10.736 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:36:38.603 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:36:40.759 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:37:08.683 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:37:11.165 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:37:38.775 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:37:41.184 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:38:08.826 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:38:11.292 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:38:38.888 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:38:41.428 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:39:09.370 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:39:11.675 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:39:39.695 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:39:41.809 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:40:09.773 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:40:12.183 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:40:40.037 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:40:42.193 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:41:10.113 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:41:12.234 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:41:40.169 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:41:42.777 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:42:10.256 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:42:12.804 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:42:40.317 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:42:42.838 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:42:49.647 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:43:10.396 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:43:13.159 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:43:19.716 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:43:25.376 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:43:40.551 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:43:43.231 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:43:49.847 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:43:55.737 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:44:10.623 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:44:13.276 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:44:20.007 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:44:25.820 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:44:40.659 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:44:43.746 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:44:50.170 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:44:56.100 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:45:10.728 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:45:13.785 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:45:20.251 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:45:26.190 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:45:40.786 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:45:43.978 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:45:50.539 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:45:56.379 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:46:10.847 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:46:14.099 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:46:20.598 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:46:26.677 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:46:41.076 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:46:44.183 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:46:50.652 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:46:56.787 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:47:11.339 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:47:14.274 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:47:21.490 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:47:27.042 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:47:41.480 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:47:44.620 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:47:51.613 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:47:57.128 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:48:11.580 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:48:14.764 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:48:21.657 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:48:27.180 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:48:41.584 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:48:44.903 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:48:51.783 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:48:57.430 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:49:11.668 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:49:15.351 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:49:21.884 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:49:27.497 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:49:41.980 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:49:45.400 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:49:52.073 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:49:57.518 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:50:12.094 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:50:15.469 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:50:22.580 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:50:27.658 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:50:42.179 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:50:45.750 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:50:52.587 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:50:57.903 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:51:12.391 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:51:15.796 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:51:22.737 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:51:28.020 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:51:42.466 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:51:45.841 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:51:52.860 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:51:58.031 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:52:12.468 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:52:16.092 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:52:23.217 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:52:28.502 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:52:42.632 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:52:46.095 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:52:53.233 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:52:58.563 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:53:12.758 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:53:16.178 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:53:23.487 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:53:28.574 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:53:42.792 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:53:46.394 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:53:53.621 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:53:58.774 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:54:13.003 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:54:16.464 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:54:23.867 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:54:28.864 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:54:43.127 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:54:46.846 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:54:54.158 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:54:58.928 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:55:13.178 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:55:17.174 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:55:24.343 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:55:29.033 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:55:43.273 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:55:47.234 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:55:54.429 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:55:59.108 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:56:13.530 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:56:17.306 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:56:24.650 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:56:26.434 +01:00 [ERR] Member Member 40 not found
+2023-02-22 04:56:26.761 +01:00 [ERR] Member Member 44 not found
+2023-02-22 04:56:27.118 +01:00 [ERR] Member Member 48 not found
+2023-02-22 04:56:27.442 +01:00 [ERR] Member Member 28 not found
+2023-02-22 04:56:27.744 +01:00 [ERR] Member Member 46 not found
+2023-02-22 04:56:28.070 +01:00 [ERR] Member Member 10 not found
+2023-02-22 04:56:28.394 +01:00 [ERR] Member Member 16 not found
+2023-02-22 04:56:28.712 +01:00 [ERR] Member Member 41 not found
+2023-02-22 04:56:29.029 +01:00 [ERR] Member Member 29 not found
+2023-02-22 04:56:29.330 +01:00 [ERR] Member Member 12 not found
+2023-02-22 04:56:29.580 +01:00 [ERR] Member Member 14 not found
+2023-02-22 04:56:29.816 +01:00 [ERR] Member Member 42 not found
+2023-02-22 04:56:30.035 +01:00 [ERR] Member Member 18 not found
+2023-02-22 04:56:30.261 +01:00 [ERR] Member Member 24 not found
+2023-02-22 04:56:30.484 +01:00 [ERR] Member Member 49 not found
+2023-02-22 04:56:30.713 +01:00 [ERR] Member Member 15 not found
+2023-02-22 04:56:30.936 +01:00 [ERR] Member Member 25 not found
+2023-02-22 04:56:31.159 +01:00 [ERR] Member Member 4 not found
+2023-02-22 04:56:31.384 +01:00 [ERR] Member Member 45 not found
+2023-02-22 04:56:31.600 +01:00 [ERR] Member Member 6 not found
+2023-02-22 04:56:31.833 +01:00 [ERR] Member Member 7 not found
+2023-02-22 04:56:32.088 +01:00 [ERR] Member Member 11 not found
+2023-02-22 04:56:32.295 +01:00 [ERR] Member Member 20 not found
+2023-02-22 04:56:32.374 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 04:56:32.564 +01:00 [ERR] Member Member 19 not found
+2023-02-22 04:56:32.796 +01:00 [ERR] Member Member 13 not found
+2023-02-22 04:56:33.031 +01:00 [ERR] Member Member 43 not found
+2023-02-22 04:56:33.254 +01:00 [ERR] Member Member 5 not found
+2023-02-22 04:56:33.484 +01:00 [ERR] Member Member 26 not found
+2023-02-22 04:56:33.694 +01:00 [ERR] Member Member 22 not found
+2023-02-22 04:56:33.929 +01:00 [ERR] Member Member 47 not found
+2023-02-22 04:56:34.166 +01:00 [ERR] Member Member 34 not found
+2023-02-22 04:56:34.386 +01:00 [ERR] Member Member 35 not found
+2023-02-22 04:56:34.594 +01:00 [ERR] Member Member 17 not found
+2023-02-22 04:56:34.846 +01:00 [ERR] Member Member 21 not found
+2023-02-22 04:56:35.069 +01:00 [ERR] Member Member 23 not found
+2023-02-22 04:56:35.293 +01:00 [ERR] Member Member 27 not found
+2023-02-22 04:56:35.511 +01:00 [ERR] Member Member 8 not found
+2023-02-22 04:56:35.723 +01:00 [ERR] Member Member 0 not found
+2023-02-22 04:56:35.944 +01:00 [ERR] Member Member 2 not found
+2023-02-22 04:56:36.143 +01:00 [ERR] Member Member 9 not found
+2023-02-22 04:56:36.372 +01:00 [ERR] Member Member 32 not found
+2023-02-22 04:56:36.620 +01:00 [ERR] Member Member 3 not found
+2023-02-22 04:56:36.839 +01:00 [ERR] Member Member 33 not found
+2023-02-22 04:56:37.058 +01:00 [ERR] Member Member 1 not found
+2023-02-22 04:56:37.264 +01:00 [ERR] Member Member 38 not found
+2023-02-22 04:56:37.484 +01:00 [ERR] Member Member 30 not found
+2023-02-22 04:56:37.698 +01:00 [ERR] Member Member 31 not found
+2023-02-22 04:56:37.907 +01:00 [ERR] Member Member 36 not found
+2023-02-22 04:56:38.141 +01:00 [ERR] Member Member Slow not found
+2023-02-22 04:56:38.339 +01:00 [ERR] Member Member 37 not found
+2023-02-22 04:56:38.562 +01:00 [ERR] Member Member 39 not found
+2023-02-22 04:56:43.534 +01:00 [WRN] Message Hello from Lambda! has no message type
+2023-02-22 14:41:29.872 +01:00 [ERR] BackgroundService failed
+System.Net.Http.HttpRequestException: Connection refused (localhost:5487)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__0>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 39
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 42
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 14:41:29.895 +01:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Net.Http.HttpRequestException: Connection refused (localhost:5487)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__0>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 39
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 42
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 14:50:49.225 +01:00 [ERR] BackgroundService failed
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__1>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 50
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 62
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 14:50:49.260 +01:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__1>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 50
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 62
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 14:53:28.643 +01:00 [ERR] BackgroundService failed
+System.Net.Http.HttpRequestException: Connection refused (localhost:5487)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__0>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 40
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 14:53:28.680 +01:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Net.Http.HttpRequestException: Connection refused (localhost:5487)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__0>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 40
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 14:58:11.049 +01:00 [ERR] BackgroundService failed
+System.Net.Http.HttpRequestException: Cannot assign requested address (localhost:5487)
+ ---> System.Net.Sockets.SocketException (99): Cannot assign requested address
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__0>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 40
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 14:58:11.123 +01:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Net.Http.HttpRequestException: Cannot assign requested address (localhost:5487)
+ ---> System.Net.Sockets.SocketException (99): Cannot assign requested address
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__0>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 40
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 15:22:16.959 +01:00 [ERR] BackgroundService failed
+System.Net.Http.HttpRequestException: Connection refused (localhost:5487)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__0>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 40
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-02-22 15:22:17.012 +01:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Net.Http.HttpRequestException: Connection refused (localhost:5487)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Consumer.Aws.SQSConsumerService.<>c__DisplayClass6_0.<<ExecuteAsync>b__0>d.MoveNext() in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 40
+--- End of stack trace from previous location ---
+   at Consumer.Aws.SQSConsumerService.ExecuteAsync(CancellationToken ct) in /home/kedalen/Projects/Humansoft/PresenceManager_SQS/Consumer/Aws/SQSConsumerService.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)

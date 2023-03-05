@@ -2,7 +2,7 @@ using System.Reflection;
 using Consumer.Handlers;
 using Contracts.Messages;
 
-namespace Consumer;
+namespace Consumer.Aws;
 
 public class MessageDispatcher
 {
@@ -13,7 +13,7 @@ public class MessageDispatcher
         { nameof(CustomerCreated), typeof(CustomerCreated) },
         { nameof(CustomerDeleted), typeof(CustomerDeleted) }
     };*/
-    
+
     private readonly Dictionary<string, Func<IServiceProvider, IMessageHandler>> _handlers;/* = new()
     {
         { nameof(CustomerCreated), provider => provider.GetRequiredService<CustomerCreatedHandler>() },
@@ -31,7 +31,6 @@ public class MessageDispatcher
             .Where(x => typeof(IMessage).IsAssignableFrom(x) && !x.IsInterface && !x.IsAbstract)
             .ToDictionary(info => info.Name, info => info.AsType());
 
-        Console.WriteLine("MessageMappings added successfully {0}", _messageMappings.Count());
 
         _handlers = Assembly.GetExecutingAssembly().DefinedTypes
             .Where(x => typeof(IMessageHandler).IsAssignableFrom(x) && !x.IsInterface && !x.IsAbstract)
@@ -39,17 +38,7 @@ public class MessageDispatcher
             info => ((Type)info.GetProperty(nameof(IMessageHandler.MessageType))!.GetValue(null)!)!.Name,
             info => provider => (IMessageHandler)provider.GetRequiredService(info.AsType()));
 
-        //Print the name of all the _messageMappings
-        foreach (var messageMapping in _messageMappings)
-        {
-            Console.WriteLine("MessageMapping: {0}", messageMapping.Key);
-        }
 
-        //Print the name of all the _handlers
-        foreach (var handler in _handlers)
-        {
-            Console.WriteLine("Handler: {0}", handler.Key);
-        }
     }
 
     public async Task DispatchAsync<TMessage>(TMessage message)
@@ -60,17 +49,43 @@ public class MessageDispatcher
         await handler.HandleAsync(message);
     }
 
-    public bool CanHandleMessageType(string messageTypeName)
+    private bool CanHandleMessageType(string messageTypeName)
     {
         return _handlers.ContainsKey(messageTypeName);
     }
 
-    public Type? GetMessageTypeByName(string messageTypeName)
+
+    public bool TryGetType(string messageTypeName, out Type messageType)
     {
 
-        var n = _messageMappings.GetValueOrDefault(messageTypeName) is null ? "null" : _messageMappings.GetValueOrDefault(messageTypeName)!.Name;
 
-        return _messageMappings.GetValueOrDefault(messageTypeName);
-    
+
+        if (string.IsNullOrWhiteSpace(messageTypeName))
+        {
+            messageType = default!;
+            return false;
+        }
+
+        if (!CanHandleMessageType(messageTypeName))
+        {
+            messageType = default!;
+            return false;
+        }
+        var res = GetMessageTypeByName(messageTypeName);
+        if (res is null)
+        {
+            messageType = default!;
+            return false;
+        }
+
+
+        messageType = res;
+        return true;
     }
+    private Type? GetMessageTypeByName(string messageTypeName)
+    {
+        return _messageMappings.GetValueOrDefault(messageTypeName);
+    }
+
+
 }

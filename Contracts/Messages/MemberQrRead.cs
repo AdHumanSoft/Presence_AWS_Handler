@@ -18,6 +18,9 @@ public class MemberQrRead : IMessage
 
     [JsonPropertyName("centerId")]
     public string CenterId { get; init; } = string.Empty;
+
+    [JsonPropertyName("entityId")]
+    public string EntityId { get; init; } = string.Empty;
     //Date as ISO 8601
     [JsonPropertyName("dateOfArrival")]
     public string DateOfArrival { get; init; } = string.Empty;
